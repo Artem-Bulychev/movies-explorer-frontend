@@ -9,14 +9,14 @@ import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Error from "../Error/Error";
 import Footer from "../Footer/Footer";
-import { routesWithHeader, routesWithFooter } from "../../utils/constantas";
+import { headerRoutes, footerRoutes } from "../../utils/constantas";
 
 function App() {
   const { pathname } = useLocation();
-  const headerRoutes = routesWithHeader.find((item) => {
+  const headerRoutes = headerRoutes.find((item) => {
     return item === pathname;
   });
-  const footerRoutes = routesWithFooter.find((item) => {
+  const footerRoutes = footerRoutes.find((item) => {
     return item === pathname;
   });
 

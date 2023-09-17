@@ -3,12 +3,12 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./Header.css";
-import { routesWithoutBlueHeader, SCREEN_MD } from "../../utils/constantas";
+import { blueHeaderRoutes, SCREEN_MD } from "../../utils/constantas";
 import Navigation from "../Navigation/Navigation";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const headerColorRoutes = routesWithoutBlueHeader.find((item) => {
+  const headerColorRoutes = blueHeaderRoutes.find((item) => {
     return item === pathname;
   });
 
