@@ -16,4 +16,4 @@
 # movies-explorer-frontend
 ## Название макета
 
-light-2
+light-3
