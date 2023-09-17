@@ -6,7 +6,6 @@ const SavedMovies = () => {
   return (
     <>
         <SearchForm />
-        {/* <Preloader/> */}
         <MoviesCardList />
     </>
   );

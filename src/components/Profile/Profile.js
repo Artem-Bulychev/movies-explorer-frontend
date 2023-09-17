@@ -5,39 +5,39 @@ import "./Profile.css";
 function Profile() {
   return (
     <main className="profile">
-      <form className="profile-form">
-        <p className="profile-form__name">Привет, Виталий!</p>
-          <label className="profile-form__field">
+      <form className="profile">
+        <p className="profile__name">Привет, Артём!</p>
+          <label className="profile__field">
             <input
               id="name"
               type="name"
               name="name"
               value=""
               placeholder="Имя"
-              className="profile-form__info"
+              className="profile__info"
               minLength="2"
               maxLength="40"
               required=""
             />
             Виталий
           </label>
-          <hr className="profile-form__line"></hr>
-          <label className="profile-form__field">
+          <hr className="profile__line"></hr>
+          <label className="profile__field">
           <input
             id="email"
             type="email"
             name="email"
             value=""
             placeholder="Email"
-            className="profile-form__info"
+            className="profile__info"
             minLength="2"
             maxLength="40"
             required=""
           />
-          pochta@yandex.ru
+          mail@yandex.ru
           </label>
             
-        <button className="profile-form__save" type="submit">
+        <button className="profile__save" type="submit">
           Редактировать
         </button>
           <Link to="/signin" className="profile__signin-link">

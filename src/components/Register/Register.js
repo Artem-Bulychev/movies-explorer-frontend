@@ -10,7 +10,7 @@ function Register() {
         <Link to="/">
           <img className="logo register-form__logo" src={logo} alt="Логотип" />
         </Link>
-        <p className="register-form__name">Добро пожаловать!</p>
+        <p className=".register-form__title">Добро пожаловать!</p>
           <label className="register-form__field">
             Имя
             <input
@@ -51,7 +51,7 @@ function Register() {
           />
            </label>
             
-        <p className="register-form__err">Что-то пошло не так...</p>
+        <p className="register-form__error">Что-то пошло не так...</p>
         <button className="register-form__save" type="submit">
           Зарегистрироваться
         </button>

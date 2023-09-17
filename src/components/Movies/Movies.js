@@ -1,13 +1,11 @@
 import React from "react";
+import MoviesCardList from "..//MoviesCardList/MoviesCardList";
 import SearchForm from "../SearchForm/SearchForm";
-// import Preloader from '../Preloader/Preloader';
-import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 const Movies = () => {
   return (
     <>
         <SearchForm />
-        {/* <Preloader/>  */}
         <MoviesCardList />
     </>
   );

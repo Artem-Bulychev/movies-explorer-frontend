@@ -1,50 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Login.css";
 import logo from "../../images/logo.svg";
+import { Link } from "react-router-dom";
+
 
 function Login() {
   return (
     <main className="login">
-      <form className="login-form">
+      <form className="login__form">
         <Link to="/">
-          <img className="logo login-form__logo" src={logo} alt="Логотип" />
+          <img className="logo login__form_logo" src={logo} alt="Логотип" />
         </Link>
-        <p className="login-form__name">Рады видеть!</p>
-          <label className="login-form__field">
+        <p className="login__form_name">Рады видеть!</p>
+          <label className="login__form_field">
             E-mail
           <input
             id="email"
             type="email"
             name="email"
             placeholder="Email"
-            className="login-form__info"
+            className="login__form_info"
             minLength="2"
             maxLength="40"
             required=""
           />
           </label>
-          <label className="login-form__field">
+          <label className="login__form_field">
             Пароль
           <input
             id="password"
             type="password"
             name="password"
             placeholder="Пароль"
-            className="login-form__info"
+            className="login__form_info"
             minLength="6"
             maxLength="40"
             required=""
           />
            </label>
             
-        {/* <p className="login-form__err">Что-то пошло не так...</p> */}
-        <button className="login-form__save" type="submit">
+
+        <button className="login__button" type="submit">
           Войти
         </button>
-        <div className="login__signup">
-          <p className="login__signup-text">Еще не зарегистрированы?</p>
-          <Link to="/signup" className="login__signup-link">
+        <div className="login__support">
+          <p className="login__support-text">Еще не зарегистрированы?</p>
+          <Link to="/signup" className="login__support-link">
           Регистрация
           </Link>
         </div>

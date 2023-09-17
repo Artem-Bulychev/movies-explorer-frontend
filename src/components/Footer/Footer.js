@@ -4,10 +4,10 @@ import './Footer.css';
 export default function Footer() {
   return (
     <section className="footer">
-      <h2 className="footer__name">
+      <h2 className="footer__title">
         Учебный проект Яндекс.Практикум х BeatFilm.
       </h2>
-      <div className="footer__info">
+      <div className="footer__navigationigation">
         <p className="footer__date">&copy; {new Date().getFullYear()}</p>
         <ul className="footer__links-list">
           <li className="footer__list-item">

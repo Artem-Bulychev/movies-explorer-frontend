@@ -5,7 +5,7 @@
     align-items: center;
     padding-top: 70px;
 }
-.login-form{
+.login__form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -13,14 +13,14 @@
     width: 100%;
 }
 
-.login-form__name{
+.login__form_name{
     margin: 38px 0;
     font-size: 24px;
     font-weight: 500;
 }
 
 
-.login-form__field{
+.login__form_field{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -29,7 +29,7 @@
     font-weight: 400;
 
 }
-.login-form__info{
+.login__form_info{
     margin-top: 12px;
     margin-bottom: 20px;
     width: 370px;
@@ -44,11 +44,11 @@
     font-weight: 500;
 }
 
-.login-form__save{
+.login__button{
     margin-top: 158px;
     width: 396px;
     height: 45px;
-    background:  #FF6838;
+    background:  #3456F3;
     border-radius: 3px;
     border: 0;
     color: #FFF;
@@ -57,15 +57,15 @@
 }
 
 
-.login-form__save:hover {
+.login__button:hover {
     cursor: pointer;
     opacity: .8;
 }
-.login-form__save:disabled {
+.login__button:disabled {
     cursor: default;
     opacity: .2;
 }
-.login__signup{
+.login__support{
     display: flex;
     padding-top: 16px;
     width: 100%;
@@ -74,17 +74,17 @@
     font-weight: 400;
 }
 
-.login__signup-text{
+.login__support-text{
     margin: 0;
     margin-right: 6px;
     color: #A0A0A0;
 }
-.login__signup-link{
-    color: #FF6838;
+.login__support-link{
+    color: #3456F3;
     text-decoration: none;
 }
 
-.login__signup-link:hover {
+.login__support-link:hover {
     opacity: .4;
 }
 
@@ -99,25 +99,25 @@
       padding-top: 56px;
     }
 
-    .login-form {
+    .login__form {
         width: 260px;
         align-items: center;
       }
 
-    .login-form__name {
+    .login__form_name {
         margin: 47px auto 80px;
     }
 
-    .login-form__info {
+    .login__form_info {
         width: 236px;
      }
 
-     .login-form__save {
+     .login__button {
         margin-top: 244px;
         width: 260px;
         font-size: 12px;
     }
-    .login__signup {
+    .login__support {
         font-size: 12px;
     }
 }

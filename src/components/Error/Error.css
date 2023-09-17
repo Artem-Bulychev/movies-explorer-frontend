@@ -1,14 +1,14 @@
-.error{
-    display: flex;
+.error  {
     flex-direction: column;
     padding: 246px 0 60px;
+    display: flex;
 }
 
-.error__number{
+.error__text-container{
     margin: 0;
-    font-size: 140px;
     font-weight: 400;
     line-height: normal;
+    font-size: 140px;
 }
 .error__name{
     margin: 5px 0 184px;
@@ -17,17 +17,17 @@
     line-height: normal;
 }
 
-.error__back{
-    cursor: pointer;
-    color: #FF6838;
-    font-size: 14px;
+.error__button{
     font-weight: 400;
     line-height: normal;
     border: none;
     background: none;
+    cursor: pointer;
+    color:  #3456F3;
+    font-size: 14px;
 }
 
-.error__back:hover{
+.error__button:hover{
     opacity: .8;
 }
 
@@ -46,11 +46,11 @@
         font-size: 12px;
     }
 
-    .error__number {
+    .error__text-container {
         font-size: 80px;
     }
 
-    .error__back {
+    .error__button {
         font-size: 12px;
      }
 }

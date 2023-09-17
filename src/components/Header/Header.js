@@ -3,39 +3,39 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./Header.css";
-import { blueHeaderRoutes, SCREEN_MD } from "../../utils/constantas";
+import { greyHeaderRoutes, SCRN } from "../../utils/constants";
 import Navigation from "../Navigation/Navigation";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const headerColorRoutes = blueHeaderRoutes.find((item) => {
+  const headRoutes = greyHeaderRoutes.find((item) => {
     return item === pathname;
   });
 
-  let resize;
+  let res;
 
-  const useResize = () => {
+  const useRes = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-      const handleResize = (event) => {
+      const handRes = (event) => {
         setWidth(event.target.innerWidth);
       };
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("res", handRes);
       return () => {
-        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("res", handRes);
       };
     }, []);
 
-    return width <= SCREEN_MD;
+    return width <= SCRN;
   };
 
-  resize = useResize();
+  res = useRes();
   
   return (
     <header
       className={`header ${pathname === "/" ? "header_main" : ""} ${
-        headerColorRoutes ? "header__all" : ""
+        headRoutes ? "header__all" : ""
       }`}
     >
       <Link to="/">
@@ -44,25 +44,25 @@ export default function Header() {
       <Routes>
         <Route
           path="/movies"
-          element={resize ? <BurgerMenu /> : <Navigation />}
+          element={res ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/saved-movies"
-          element={resize ? <BurgerMenu /> : <Navigation />}
+          element={res ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/profile"
-          element={resize ? <BurgerMenu /> : <Navigation />}
+          element={res ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/"
           element={
-            <div className="header__main">
-              <div className="header__box-main">
-                <Link to="/signup" className="header__main-link">
+            <div className="header__container">
+              <div className="header__container-box">
+                <Link to="/signup" className="header__container-link">
                   Регистрация
                 </Link>
-                <Link to="/signin" className="header__main-link">
+                <Link to="/signin" className="header__container-link">
                   Войти
                 </Link>
               </div>

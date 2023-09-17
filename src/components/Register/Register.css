@@ -1,22 +1,22 @@
-.register{
+.register {
     max-width: 1280px;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-top: 70px;
+    display: flex;
 }
 
 .register-form{
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     max-width: 396px;
-    width: 100%;
 }
 
 
-.register-form__name{
+.register-form__title {
     margin: 38px 0;
     font-size: 24px;
     font-weight: 500;
@@ -25,22 +25,21 @@
 
 .register-form__field{
     display: flex;
+    font-weight: 400;
     flex-direction: column;
     align-items: flex-start;
     color: #A0A0A0;
     font-size: 10px;
-    font-weight: 400;
 }
 .register-form__info{
-    margin-top: 10px;
-    margin-bottom: 18px;
-    width: 370px;
     border: 0;
     background:  #F9F9F9;
     height: 22px;
     padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    width: 370px;
     border-radius: 8px;
-      
     color: #000;
     font-size: 13px;
     font-weight: 500;
@@ -50,23 +49,23 @@
 }
 
 
-.register-form__err{
-    margin: 0;
+.register-form__error{
     color: #EE3465;
     align-self: flex-start;
     font-size: 10px;
     font-weight: 400;
+    margin: 0;
     line-height: normal;
 }
 
 .register-form__save{
-    margin-top: 66px;
-    width: 396px;
     height: 45px;
-    background:  #FF6838;
+    background:  #3456F3;
     border-radius: 3px;
     border: 0;
     color: #FFF;
+    margin-top: 66px;
+    width: 396px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -83,11 +82,11 @@
 }
 
 .register__signin{
-    display: flex;
-    padding-top: 16px;
     width: 100%;
     justify-content: center;
     font-size: 14px;
+    display: flex;
+    padding-top: 16px;
     font-weight: 400;
 }
 
@@ -97,7 +96,7 @@
     color: #A0A0A0;
 }
 .register__signin-link{
-    color: #FF6838;
+    color: #3456F3;
     text-decoration: none;
 }
 
@@ -120,7 +119,7 @@
         align-items: center;
     }
 
-    .register-form__name {
+    .register-form__title {
         margin: 47px auto 80px;
     }
 

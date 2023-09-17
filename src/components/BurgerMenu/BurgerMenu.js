@@ -12,7 +12,7 @@ export default function BurgerMenu() {
  }
 
   return (
-    <nav className="burger">
+    <navigation className="burger">
       <button className="burger-button" type="button"
       onClick={handleEditBurgerClick}
       >
@@ -23,17 +23,17 @@ export default function BurgerMenu() {
         <div className="burger__blur" />
         <button className="burger__close" type="button"
         onClick={handleCloseBurgerClick}/>
-        <div className="burger__nav">
-          <Link to="/" className="burger__nav-link">
+        <div className="burger__navigation">
+          <Link to="/" className="burger__navigation-link">
             Главная
           </Link>
           <Link
             to="/movies"
-            className="burger__nav-link burger__nav-link_active"
+            className="burger__navigation-link burger__navigation-link_active"
           >
             Фильмы
           </Link>
-          <Link to="/saved-movies" className="burger__nav-link burger__nav-link_last-child">
+          <Link to="/saved-movies" className="burger__navigation-link burger__navigation-link_last-child">
             Сохранённые фильмы
           </Link>
           <Link to="/profile" className="burger__profile">
@@ -42,6 +42,6 @@ export default function BurgerMenu() {
         </div>
       </div>
 
-    </nav>
+    </navigation>
   );
 }

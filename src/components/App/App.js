@@ -9,20 +9,20 @@ import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Error from "../Error/Error";
 import Footer from "../Footer/Footer";
-import { headerRoutes, footerRoutes } from "../../utils/constantas";
+import { headerRoutes, footerRoutes } from "../../utils/constants.js";
 
 function App() {
   const { pathname } = useLocation();
-  const headerRoutes = headerRoutes.find((item) => {
+  const headRout = headerRoutes.find((item) => {
     return item === pathname;
   });
-  const footerRoutes = footerRoutes.find((item) => {
+  const footerRout = footerRoutes.find((item) => {
     return item === pathname;
   });
 
   return (
     <div className="App">
-      {headerRoutes ? <Header /> : ""}
+      {headRout ? <Header /> : ""}
       <main>
         <Routes>
           <Route path="/" element={<Main />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </main>
-      {footerRoutes ? <Footer /> : ""}
+      {footerRout ? <Footer /> : ""}
     </div>
   );
 }

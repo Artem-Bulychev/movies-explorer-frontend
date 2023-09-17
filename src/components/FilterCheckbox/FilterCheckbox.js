@@ -4,9 +4,9 @@ import "./FilterCheckbox.css"
 export default function FilterCheckbox() {
   return (
     <div className="filter">
-       <label className="filter-box">
-          <input className="filter-box__input" type="checkbox"/>
-          <span className="filter-box__slider"></span>
+       <label className="filter-checkbox">
+          <input className="filter-checkbox__input" type="checkbox"/>
+          <span className="filter-checkbox__text"></span>
        </label>
        <p className="filter-name">Короткометражки</p>
     </div>

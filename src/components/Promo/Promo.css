@@ -2,7 +2,6 @@
   display: flex;
   height: 524px;
   background-color:#DDDEE3;
-  color: #000000;
   position: relative;
   background-image: url(../../images/promo.svg);
   background-size: cover;
@@ -10,16 +9,17 @@
   background-size: 322px 320px;
   background-position: center top 40%;
   z-index: 1;
+  color: #000000;
 }
 
 .promo__name{
     max-width: 730px;
-    margin: 0 auto;
-    padding-top: 184px;
     font-size: 50px;
     font-weight: 400;
     line-height: 58px;
     letter-spacing: -2px;
+    margin: 0 auto;
+    padding-top: 184px;
 
 }
 
@@ -42,16 +42,16 @@
 
 @media screen and (max-width: 570px) {
     .promo {
-        height: 570px;
         background-size: 248.004px 248.005px;
         background-position: center top 44%;
+        height: 570px;
      }
 
     .promo__name {
         max-width: 300px;
+        line-height: 39px;
+        letter-spacing: -1.26px;
         padding-top: 207px;
         font-size: 31px;
-        line-height: 39px;
-        letter-spacing: -1.24px;
      }
 }
