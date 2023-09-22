@@ -1,23 +1,23 @@
-.portfolio{
-    padding: 20px 75px 20px 70px;
+.portfolio {
     height: 405px;
+    padding: 0px 75px 20px 70px;
 }
 
 
-.portfolio__list{
+.portfolio__list {
     padding: 0;
     list-style: none;
 }
-.portfolio__element{
+.portfolio__element {
     border-bottom: 1px solid #E8E8E8;
     text-decoration: none;
     padding: 20px 0 17px;
 }
-.portfolio__element:last-child{
+.portfolio__element:last-child {
     border: none;
 }
 
-.portfolio__link{
+.portfolio__link {
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -27,22 +27,29 @@
     display: flex;
     cursor: pointer;
 }
-.portfolio__link:hover{
-    opacity: .6;
+.portfolio__link:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
-.portfolio__link-text{
+
+.portfolio__link:focus-visible {
+    outline: #3456f3 solid;
+    border-radius: 2px;
+}
+
+.portfolio__link-text {
     font-weight: 400;
     line-height: 50px;
     letter-spacing: -1.2px;
     font-size: 30px;
     text-decoration: none;
 }
-.portfolio__arrow{
+.portfolio__arrow {
     width: 17px;
     height: 17px;
 }
 
-.portfolio__title{
+.portfolio__title {
     margin: 0;
     padding-bottom: 15px;
     color: #A0A0A0;

@@ -1,63 +1,82 @@
 .header {
-    margin: 0 auto;
-    height: 74px;
-    box-sizing: border-box;
-    padding: 18px 5.5%;
+  margin: 0 auto;
+  height: 74px;
+  box-sizing: border-box;
+  padding: 18px 5.5%;
   }
 
-  .header__container-link:last-child{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 76px;
-    height: 32px;
-    color: #FFFFFF;
-    border-radius: 3px;
-    background: #3456F3;  
-  }
+.header__container-link:last-child{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 32px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  background: #3456F3;  
+}
 
-  .header_main{
-    background: #DDDEE3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__all{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__container-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__container-link{
-    color: #000000;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    padding-right: 30px;
-    text-decoration: none;
-  }
 
+.header_main {
+  background: #DDDEE3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container-link {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.header__container-link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.logo:focus-visible {
+	outline: #3456F3 solid;
+	border-radius: 2px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
   
 @media screen and (max-width: 768px) {
-    .header {
-      padding: 18px 3.8%;
-     }
+  .header {
+    padding: 18px 3.8%;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .header__container-link {
-    font-size: 10px;
-    padding-right: 16px;
-   }
+   font-size: 10px;
+   padding-right: 16px;
+  }
 
-   .header__container-link:last-child {
+  .header__container-link:last-child {
     width: 54px;
     height: 26px;
-   }
+  }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 
-export default function navigation() {
+export default function Navigation() {
   return (
     <nav className="navigation">
       <div className="navigation-box">

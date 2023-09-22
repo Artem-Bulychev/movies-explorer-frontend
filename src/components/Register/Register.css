@@ -3,11 +3,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding: 70px 0;
     display: flex;
 }
 
-.register-form{
+.register-form {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -17,13 +17,14 @@
 
 
 .register-form__title {
-    margin: 38px 0;
+    margin: 40px 0;
     font-size: 24px;
     font-weight: 500;
+    font-style: normal;
 }
 
 
-.register-form__field{
+.register-form__field {
     display: flex;
     font-weight: 400;
     flex-direction: column;
@@ -31,7 +32,7 @@
     color: #A0A0A0;
     font-size: 10px;
 }
-.register-form__info{
+.register-form__info {
     border: 0;
     background:  #F9F9F9;
     height: 22px;
@@ -44,27 +45,35 @@
     font-size: 13px;
     font-weight: 500;
 }
-.register-form__info:last-child{
+
+.register-form__info:focus {
+    outline: none;
+    border-color: #3456f3;
+}
+
+.register-form__info:last-child {
     margin-bottom: 15px;
 }
 
 
-.register-form__error{
-    color: #EE3465;
-    align-self: flex-start;
+.register-form__error {
     font-size: 10px;
     font-weight: 400;
-    margin: 0;
     line-height: normal;
+    min-height: 12px;
+    margin: 0;
+    color: #EE3465;
+    align-self: start;
 }
 
-.register-form__save{
+.register-form__save {
+    position: relative;
     height: 45px;
     background:  #3456F3;
     border-radius: 3px;
     border: 0;
     color: #FFF;
-    margin-top: 66px;
+    margin-top: 134px;
     width: 396px;
     font-size: 14px;
     font-weight: 500;
@@ -78,7 +87,9 @@
   
 .register-form__save:disabled {
     cursor: default;
-    opacity: .2;
+    opacity: .1;
+    background-color: #F8F8F8;
+    color: #c2c2c2;
 }
 
 .register__signin{
@@ -90,12 +101,12 @@
     font-weight: 400;
 }
 
-.register__signin-text{
+.register__signin-text {
     margin: 0;
     margin-right: 6px;
     color: #A0A0A0;
 }
-.register__signin-link{
+.register__signin-link {
     color: #3456F3;
     text-decoration: none;
 }
@@ -113,6 +124,10 @@
     .register {
       padding-top: 56px;
     }
+
+    .register-form__info {
+        width: 236px;
+     }
 
     .register-form {
         width: 260px;

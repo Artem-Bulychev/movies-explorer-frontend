@@ -41,15 +41,22 @@
     outline: none;
 }
 
+.search-form__input:focus {
+    outline-color: #3456f3;
+    cursor: text;
+}
+
 .search-form__btn {
     background-image: url(../../images/find.svg);
     border: none;
     border-radius: 40px;
     cursor: pointer;
     padding: 0;
-    width: 80px;
+    width: 38px;
     height: 34px;
+    background-repeat: no-repeat;
 }
+
 .search-form__btn:hover {
  opacity: .8;
  transition: ease-out 0.2s;

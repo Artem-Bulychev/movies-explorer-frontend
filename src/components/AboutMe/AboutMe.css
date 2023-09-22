@@ -1,9 +1,9 @@
 .about-me {
   display: grid;
-  height: 657px;
+  height: 654px;
   column-gap: 20px;
   grid-template-areas:
-  "title subtitle"
+  "title title"
   "bio photo";
   grid-template-columns: 1fr 270px;
   grid-template-rows: min-content;
@@ -20,7 +20,7 @@
   font-size: 22px;
   border-bottom: 1px solid black;
   margin: 0 0 66px;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -30,8 +30,6 @@
   grid-area: bio;
   max-width: 600px;
   flex-direction: column;
-
-
 }
 
 .about-me__title {
@@ -46,6 +44,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+  font-family: Inter;
   margin: 18px 0 0;
   font-feature-settings: 'clig' off, 'liga' off; 
 
@@ -57,7 +56,7 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  margin: 26px 0 100px;
+  margin: 26px 0 0;
 }
 
 .about-me__avatar {
@@ -68,10 +67,25 @@
   height: 327px;
 }
 
-.about-me__link:hover {
-  opacity: 0.5;
+.about-me__link {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
 }
 
+
+.about-me__link:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.about-me__link:focus-visible {
+  outline: #3456f3 solid;
+  border-radius: 2px;
+}
 
 @media screen and (max-width: 768px) {
   .about-me {
@@ -106,6 +120,7 @@
   .about-me__avatar {
     width: 255px;
     height: 307px;
+    margin: 0 auto;
   }
 }
 

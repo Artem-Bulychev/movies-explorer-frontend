@@ -4,9 +4,9 @@ import "./Profile.css";
 
 function Profile() {
   return (
-    <main className="profile">
-      <form className="profile">
-        <p className="profile__name">Привет, Артём!</p>
+    <section className="profile">
+      <form className="profile-form">
+        <h1 className="profile__name">Привет, Артём!</h1>
           <label className="profile__field">
             <input
               id="name"
@@ -44,7 +44,7 @@ function Profile() {
             Выйти из аккаунта
           </Link>
         </form>
-    </main>
+    </section>
   );
 }
 export default Profile;

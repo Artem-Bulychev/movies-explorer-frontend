@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 function Login() {
   return (
-    <main className="login">
+    <section className="login">
       <form className="login__form">
         <Link to="/">
           <img className="logo login__form_logo" src={logo} alt="Логотип" />
         </Link>
-        <p className="login__form_name">Рады видеть!</p>
+        <h1 className="login__form_name">Рады видеть!</h1>
           <label className="login__form_field">
             E-mail
           <input
@@ -50,7 +50,7 @@ function Login() {
           </Link>
         </div>
         </form>
-    </main>
+    </section>
   );
 }
 export default Login;

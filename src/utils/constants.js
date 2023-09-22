@@ -1,4 +1,4 @@
-export const SCRN = 655;
-export const headerRoutes = ["/", "/movies", "/saved-movies", "/profile"];
-export const greyHeaderRoutes =["/movies", "/saved-movies", "/profile"];
-export const footerRoutes = ["/", "/movies", "/saved-movies"];
+export const routesHeader = ["/", "/movies", "/saved-movies", "/profile"];
+export const routesGreyHeader =["/movies", "/saved-movies", "/profile"];
+export const routesWithFooter = ["/", "/movies", "/saved-movies"];
+export const SCREEN_MD = 768;

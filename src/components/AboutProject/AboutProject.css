@@ -1,9 +1,11 @@
 .about-project{
     height: 608px;
+    width: 100%;
 }
 
 .about-project__container {
     flex-direction: column;
+    padding-left: 70px;
     align-items: flex-start;
     display: flex;
     text-align: left;
@@ -11,10 +13,11 @@
 }
 
 .about-project__name {
+    width: 95%;
     letter-spacing: -0.88px;
     border-bottom: 1px solid black;
     margin: 0;
-    padding: 110px 0 0 22px;
+    padding: 110px 0 22px 0px;
     font-size: 22px;
     font-weight: 400;
     line-height: normal;

@@ -1,8 +1,8 @@
 .footer {
    background: #FAFAFA;
    box-sizing: border-box;
-   padding: 80px 70px 0;
-    min-height: 172px;
+   padding: 100px 70px 0;
+   min-height: 172px;
   }
 
   .footer__title {
@@ -28,7 +28,7 @@
     top: 100%;
   }
   
-  .footer__navigationigation {
+  .footer__navigation {
     display: flex;
     justify-content: space-between;
     min-height: 56px;
@@ -68,6 +68,12 @@
   
   .footer__link:hover {
     color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+  }
+
+  .footer__link:focus-visible {
+    outline: #3456f3 solid;
+    border-radius: 2px;
   }
   
   @media screen and (max-width: 768px) {
@@ -87,7 +93,7 @@
       font-size: 12px;
     }
 
-    .footer__navigationigation {
+    .footer__navigation {
       margin-top: 20px;
       justify-content: center;
       flex-direction: column;
@@ -105,7 +111,7 @@
       flex-direction: column;
     }
 
-    .footer__navigationigation {
+    .footer__navigation {
       font-size: 12px;
       text-align: center;
     }

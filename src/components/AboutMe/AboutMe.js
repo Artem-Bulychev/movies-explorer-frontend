@@ -20,7 +20,7 @@ export default function AboutMe() {
           Github
         </a>
       </div>
-      <img className="about-me__avatar" src={myPhoto} alt="Аватар" />
+      <img className="about-me__avatar" src={myPhoto} alt="Аватар студента" />
     </section>
   );
 };

@@ -12,7 +12,7 @@ export default function BurgerMenu() {
  }
 
   return (
-    <navigation className="burger">
+    <nav className="burger">
       <button className="burger-button" type="button"
       onClick={handleEditBurgerClick}
       >
@@ -42,6 +42,6 @@ export default function BurgerMenu() {
         </div>
       </div>
 
-    </navigation>
+    </nav>
   );
 }

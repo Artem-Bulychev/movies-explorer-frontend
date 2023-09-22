@@ -5,12 +5,12 @@ import logo from "../../images/logo.svg";
 
 function Register() {
   return (
-    <main className="register">
+    <section className="register">
       <form className="register-form">
         <Link to="/">
           <img className="logo register-form__logo" src={logo} alt="Логотип" />
         </Link>
-        <p className=".register-form__title">Добро пожаловать!</p>
+        <h1 className="register-form__title">Добро пожаловать!</h1>
           <label className="register-form__field">
             Имя
             <input
@@ -62,7 +62,7 @@ function Register() {
           </Link>
         </div>
         </form>
-    </main>
+    </section>
   );
 }
 export default Register;

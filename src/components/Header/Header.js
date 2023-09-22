@@ -3,34 +3,34 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./Header.css";
-import { greyHeaderRoutes, SCRN } from "../../utils/constants";
+import { routesGreyHeader, SCREEN_MD } from "../../utils/constants";
 import Navigation from "../Navigation/Navigation";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const headRoutes = greyHeaderRoutes.find((item) => {
+  const headRoutes = routesGreyHeader.find((item) => {
     return item === pathname;
   });
 
-  let res;
+  let resize;
 
-  const useRes = () => {
+  const useResize = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-      const handRes = (event) => {
+      const handleResize = (event) => {
         setWidth(event.target.innerWidth);
       };
-      window.addEventListener("res", handRes);
+      window.addEventListener("resize", handleResize);
       return () => {
-        window.removeEventListener("res", handRes);
+        window.removeEventListener("resize", handleResize);
       };
     }, []);
 
-    return width <= SCRN;
+    return width <= SCREEN_MD;
   };
 
-  res = useRes();
+  resize = useResize();
   
   return (
     <header
@@ -44,28 +44,28 @@ export default function Header() {
       <Routes>
         <Route
           path="/movies"
-          element={res ? <BurgerMenu /> : <Navigation />}
+          element={resize ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/saved-movies"
-          element={res ? <BurgerMenu /> : <Navigation />}
+          element={resize ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/profile"
-          element={res ? <BurgerMenu /> : <Navigation />}
+          element={resize ? <BurgerMenu /> : <Navigation />}
         />
         <Route
           path="/"
           element={
             <div className="header__container">
-              <div className="header__container-box">
+              <nav className="header__container-box">
                 <Link to="/signup" className="header__container-link">
                   Регистрация
                 </Link>
                 <Link to="/signin" className="header__container-link">
                   Войти
                 </Link>
-              </div>
+              </nav>
             </div>
           }
         />
