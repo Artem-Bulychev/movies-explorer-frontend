@@ -1,0 +1,10 @@
+.saved-movies__separator {
+  display: flex;
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .saved-movies__separator {
+    padding: 38px 0;
+  }
+}

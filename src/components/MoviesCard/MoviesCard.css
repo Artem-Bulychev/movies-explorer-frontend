@@ -1,5 +1,5 @@
 .movies-card{
-    background: #FDFDFD;
+    background: #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -30,16 +30,16 @@
 .movies-card__btn-save-like{
     width: 16px;
     height: 16px;
-    background: #F9F9F9;
+    background: #F4F4F4;
     border-radius: 50%;
-    box-shadow: 0 3px 5px #F9F9F9;
+    box-shadow: 0px 2px 12px 2px rgba(128, 128, 128, 0.2);
     cursor: pointer;
     border: 2px solid #FFFFFF;
 }
+
 .movies-card__btn-save-like:hover{
     opacity: .8;
     transition: 0.2s;
-    box-shadow: 0 1px 3px grey;
 }
 .movies-card__btn-save-like:active{
     background: #2BE080;

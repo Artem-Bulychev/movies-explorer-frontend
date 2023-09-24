@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
+import Profile from '../../images/profile.svg';
 
 export default function Navigation() {
   return (
@@ -14,6 +15,7 @@ export default function Navigation() {
         </Link>
       </div>
       <Link to="/profile" className="navigation__profile">
+        <img src={Profile} alt="Профиль" className="navigation__profile-icon" />
         Аккаунт
       </Link>
     </nav>

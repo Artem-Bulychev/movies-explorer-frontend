@@ -1,7 +1,11 @@
-.promo{
+.promo {
+  padding: 82px 0 124px 0;
+  background-color: #dddee3;
+}
+
+.promo__container {
+  padding: 102px 0 102px 0;
   display: flex;
-  height: 524px;
-  background-color:#DDDEE3;
   position: relative;
   background-image: url(../../images/promo.svg);
   background-size: cover;
@@ -12,46 +16,47 @@
   color: #000000;
 }
 
-.promo__name{
-    max-width: 730px;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 58px;
-    letter-spacing: -2px;
-    margin: 0 auto;
-    padding-top: 184px;
-
+.promo__name {
+  display: flex;
+  justify-content: center;
+  max-width: 730px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-    .promo {
-        height: 784px;
-        background-position: center top 48%;
-     }
-    
-    .promo__name {
-        padding-top: 326px;
-     }
+  .promo {
+    padding-top: 224px;
+    padding-bottom: 240px;
+    background-position: center top 48%;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .promo__name {
-        max-width: 500px;
-     }
+  .promo__name {
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 570px) {
-    .promo {
-        background-size: 248.004px 248.005px;
-        background-position: center top 44%;
-        height: 570px;
-     }
+  .promo {
+    padding-top: 142px;
+    padding-bottom: 180px;
+  }
 
-    .promo__name {
-        max-width: 300px;
-        line-height: 39px;
-        letter-spacing: -1.26px;
-        padding-top: 207px;
-        font-size: 31px;
-     }
+  .promo__container {
+    background-size: 248.004px 248.005px;
+    background-position: center top 44%;
+    padding: 65px 0 65px;
+  }
+
+  .promo__name {
+    max-width: 300px;
+    line-height: 39px;
+    letter-spacing: -1.26px;
+    font-size: 31px;
+  }
 }

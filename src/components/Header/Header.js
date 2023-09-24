@@ -38,8 +38,8 @@ export default function Header() {
         headRoutes ? "header__all" : ""
       }`}
     >
-      <Link to="/">
-        <img className="logo" src={logo} alt="Логотип" />
+      <Link to="/" className="header__logo">
+        <img className="header__logo-img" src={logo} alt="Логотип" />
       </Link>
       <Routes>
         <Route

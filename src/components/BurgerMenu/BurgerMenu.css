@@ -4,7 +4,7 @@
 }
 
 .burger__profile {
-  margin-top: 613px;
+  /* margin-top: 613px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +119,25 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  gap: 30px;
+}
+
+.burger__navigation-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger__profile {
+  padding: 8px 12px;
+  box-sizing: border-box;
+  margin-bottom: 90px;
+  outline: 2px solid rgba(170, 170, 170, 0.2);
+}
+.burger__profile-icon {
+  margin-right: 7px;
 }
 
 @media screen and (max-width: 320px) {
@@ -139,6 +157,10 @@
   .burger-button:before {
     width: 22px;
   }
+
+  .burger__profile {
+    margin-bottom: 46px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -153,10 +175,6 @@
 
   .burger__navigation-link:first-child {
     margin-top: 144px;
-  }
-
-  .burger__profile {
-    margin-top: 444px;
   }
 
   .burger__navigation-link_last-child {

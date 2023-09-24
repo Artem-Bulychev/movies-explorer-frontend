@@ -10,14 +10,14 @@ function Profile() {
           <label className="profile__field">
             <input
               id="name"
-              type="name"
+              type="text"
               name="name"
               value=""
               placeholder="Имя"
               className="profile__info"
               minLength="2"
               maxLength="40"
-              required=""
+              required
             />
             Виталий
           </label>
@@ -32,7 +32,7 @@ function Profile() {
             className="profile__info"
             minLength="2"
             maxLength="40"
-            required=""
+            required
           />
           mail@yandex.ru
           </label>

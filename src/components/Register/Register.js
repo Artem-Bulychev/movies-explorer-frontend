@@ -7,25 +7,25 @@ function Register() {
   return (
     <section className="register">
       <form className="register-form">
-        <Link to="/">
-          <img className="logo register-form__logo" src={logo} alt="Логотип" />
+        <Link to="/" className="register-form__logo-link">
+          <img className="register-form__logo-img" src={logo} alt="Логотип" />
         </Link>
         <h1 className="register-form__title">Добро пожаловать!</h1>
-          <label className="register-form__field">
-            Имя
-            <input
-              id="name"
-              type="name"
-              name="name"
-              placeholder="Имя"
-              className="register-form__info"
-              minLength="2"
-              maxLength="40"
-              required=""
-            />
-          </label>
-          <label className="register-form__field">
-            E-mail
+        <label className="register-form__field">
+          Имя
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            className="register-form__info"
+            minLength="2"
+            maxLength="40"
+            required
+          />
+        </label>
+        <label className="register-form__field">
+          E-mail
           <input
             id="email"
             type="email"
@@ -34,11 +34,11 @@ function Register() {
             className="register-form__info"
             minLength="2"
             maxLength="40"
-            required=""
+            required
           />
-          </label>
-          <label className="register-form__field">
-            Пароль
+        </label>
+        <label className="register-form__field">
+          Пароль
           <input
             id="password"
             type="password"
@@ -47,10 +47,9 @@ function Register() {
             className="register-form__info"
             minLength="6"
             maxLength="40"
-            required=""
+            required
           />
-           </label>
-            
+        </label>
         <p className="register-form__error">Что-то пошло не так...</p>
         <button className="register-form__save" type="submit">
           Зарегистрироваться
@@ -61,7 +60,7 @@ function Register() {
             Войти
           </Link>
         </div>
-        </form>
+      </form>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
+import Profile from '../../images/profile.svg';
 
 export default function BurgerMenu() {
   const [isBurgerOpen, setBurgerOpen] = useState(false);
@@ -24,19 +25,22 @@ export default function BurgerMenu() {
         <button className="burger__close" type="button"
         onClick={handleCloseBurgerClick}/>
         <div className="burger__navigation">
-          <Link to="/" className="burger__navigation-link">
-            Главная
-          </Link>
-          <Link
-            to="/movies"
-            className="burger__navigation-link burger__navigation-link_active"
-          >
-            Фильмы
-          </Link>
-          <Link to="/saved-movies" className="burger__navigation-link burger__navigation-link_last-child">
-            Сохранённые фильмы
-          </Link>
+          <nav className="burger__navigation-links">
+            <Link to="/" className="burger__navigation-link">
+              Главная
+            </Link>
+            <Link
+              to="/movies"
+              className="burger__navigation-link burger__navigation-link_active"
+            >
+              Фильмы
+            </Link>
+            <Link to="/saved-movies" className="burger__navigation-link burger__navigation-link_last-child">
+              Сохранённые фильмы
+            </Link>
+          </nav>
           <Link to="/profile" className="burger__profile">
+          <img src={Profile} alt="Профиль" className="burger__profile-icon" />
             Аккаунт
           </Link>
         </div>

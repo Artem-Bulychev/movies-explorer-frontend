@@ -8,6 +8,7 @@ export default function AboutMe() {
     <section className="about-me">
       <h2 className="about-me__id" id="about">Студент</h2>
       <div className="about-me__container">
+      <div className='about-me__flex-box'>
         <h3 className="about-me__title">Артём</h3>
         <p className="about-me__subtitle">Фронтенд разработчик, 27 лет</p>
         <p className="about-me__description">Я живу в городе Ханты-Мансийске, закончил факультет энергетики в ЮГУ. У меня есть жена. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2018 года работаю в нефтегазовой компании. После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами.     </p>
@@ -19,8 +20,9 @@ export default function AboutMe() {
         >
           Github
         </a>
+        </div>
+        <img className="about-me__avatar" src={myPhoto} alt="Аватар студента" />
       </div>
-      <img className="about-me__avatar" src={myPhoto} alt="Аватар студента" />
     </section>
   );
 };

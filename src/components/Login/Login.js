@@ -3,7 +3,6 @@ import "./Login.css";
 import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 
-
 function Login() {
   return (
     <section className="login">
@@ -12,8 +11,8 @@ function Login() {
           <img className="logo login__form_logo" src={logo} alt="Логотип" />
         </Link>
         <h1 className="login__form_name">Рады видеть!</h1>
-          <label className="login__form_field">
-            E-mail
+        <label className="login__form_field">
+          E-mail
           <input
             id="email"
             type="email"
@@ -22,11 +21,11 @@ function Login() {
             className="login__form_info"
             minLength="2"
             maxLength="40"
-            required=""
+            required
           />
-          </label>
-          <label className="login__form_field">
-            Пароль
+        </label>
+        <label className="login__form_field">
+          Пароль
           <input
             id="password"
             type="password"
@@ -35,21 +34,19 @@ function Login() {
             className="login__form_info"
             minLength="6"
             maxLength="40"
-            required=""
+            required
           />
-           </label>
-            
-
+        </label>
         <button className="login__button" type="submit">
           Войти
         </button>
         <div className="login__support">
           <p className="login__support-text">Еще не зарегистрированы?</p>
           <Link to="/signup" className="login__support-link">
-          Регистрация
+            Регистрация
           </Link>
         </div>
-        </form>
+      </form>
     </section>
   );
 }
