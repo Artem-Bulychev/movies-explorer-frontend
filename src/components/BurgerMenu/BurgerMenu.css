@@ -4,7 +4,6 @@
 }
 
 .burger__profile {
-  /* margin-top: 613px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +30,9 @@
   width: 22px;
   height: 22px;
   cursor: pointer;
+}
+.burger__close:hover {
+  opacity: 0.7;
 }
 .burger__navigation-link {
   color: #000;
@@ -66,6 +68,10 @@
   width: 44px;
   position: relative;
   cursor: pointer;
+}
+
+.burger-button:hover {
+  opacity: 0.7;
 }
 
 .burger-button:after {
@@ -135,6 +141,9 @@
   box-sizing: border-box;
   margin-bottom: 90px;
   outline: 2px solid rgba(170, 170, 170, 0.2);
+}
+.burger__profile:hover {
+  opacity: 0.7;
 }
 .burger__profile-icon {
   margin-right: 7px;

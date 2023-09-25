@@ -23,6 +23,7 @@
 }
 
 .register-form__field {
+  width: 100%;
   padding-top: 24px;
   gap: 5px;
   display: flex;
@@ -32,29 +33,29 @@
   color: #a0a0a0;
   font-size: 10px;
   line-height: 12px;
-  border-bottom: 1px solid #e8e8e8;
 }
 
 .register-form__field:first-of-type {
   padding: 0;
 }
 .register-form__info {
+  width: 100%;
   padding: 0;
   padding-bottom: 5px;
   margin: 0;
   border: none;
   height: 22px;
-  width: 370px;
-  border-radius: 8px;
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+  background-color: initial;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .register-form__info:focus {
   outline: none;
-  border-color: #3456f3;
+  border-color: #a8a8a8;
 }
 
 .register-form__error {

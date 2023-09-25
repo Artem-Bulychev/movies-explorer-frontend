@@ -7,9 +7,7 @@ export default function Error() {
     <section className="error">
         <h1 className="error__text-container">404</h1>
         <p className="error__name">Страница не найдена</p>
-        <Link to="/">
-            <button className="error__button" type="button">Назад</button>
-        </Link>
+        <Link to="/" className="error__button">Назад</Link>
     </section>
   );
 }

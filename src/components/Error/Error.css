@@ -20,15 +20,14 @@
 .error__button{
     font-weight: 400;
     line-height: normal;
-    border: none;
-    background: none;
     cursor: pointer;
     color:  #3456F3;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .error__button:hover{
-    opacity: .8;
+    opacity: .7;
 }
 
 @media screen and (max-width: 768px) {

@@ -11,7 +11,7 @@ export default function Navigation() {
           Фильмы
         </Link>
         <Link to="/saved-movies" className="navigation-box__link">
-          Сохранённые фильм
+          Сохранённые фильмы
         </Link>
       </div>
       <Link to="/profile" className="navigation__profile">

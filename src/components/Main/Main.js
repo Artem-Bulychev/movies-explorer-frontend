@@ -12,8 +12,8 @@ const Main = () => {
         <Promo />
         <NavigationBar />
         <AboutProject />
-         <Techs />
-       <AboutMe />
+        <Techs />
+        <AboutMe />
         <Portfolio />
     </>
   );

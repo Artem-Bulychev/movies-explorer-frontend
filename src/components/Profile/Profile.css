@@ -15,8 +15,9 @@
     align-items: baseline;
     font-size: 11px;
     font-weight: 400;
-    max-width: 410px;
+    width: 410px;
     display: flex;
+    justify-content: space-between;
     border-top: 1px solid #E8E8E8;
 }
 
@@ -25,18 +26,18 @@
 }
 
 .profile__info {
-    height: 14px;
+    width: 70%;
     color: #000;
     font-size: 11px;
     font-weight: 500;
     padding: 17px 0 16px;
-    width: 360px;
     border: 0;
+    background-color: initial;
+    text-align: right;
 }
 
-.profile__info:focus-visible {
-    outline: #3456f3 solid;
-    border-radius: 2px;
+.profile__info:focus {
+    outline: none;
 }
 
 .profile__line {

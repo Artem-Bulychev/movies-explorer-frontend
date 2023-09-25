@@ -1,6 +1,7 @@
 .saved-movies__separator {
   display: flex;
   padding: 60px 0;
+  background: #fafafa;
 }
 
 @media screen and (max-width: 500px) {

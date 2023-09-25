@@ -41,7 +41,7 @@
     opacity: .8;
     transition: 0.2s;
 }
-.movies-card__btn-save-like:active{
+.movies-card__btn-save-like_active{
     background: #2BE080;
 }
 .movies-card__btn-save-close{

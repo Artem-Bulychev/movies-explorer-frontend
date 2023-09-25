@@ -8,32 +8,30 @@ function Profile() {
       <form className="profile-form">
         <h1 className="profile__name">Привет, Артём!</h1>
           <label className="profile__field">
+            Имя
             <input
               id="name"
               type="text"
               name="name"
-              value=""
               placeholder="Имя"
               className="profile__info"
               minLength="2"
               maxLength="40"
               required
             />
-            Виталий
           </label>
           <label className="profile__field">
+            E-mail
             <input
               id="email"
               type="email"
               name="email"
-              value=""
               placeholder="Email"
               className="profile__info"
               minLength="2"
               maxLength="40"
               required
             />
-            mail@yandex.ru
           </label>
         <button className="profile__save" type="submit">
           Редактировать
