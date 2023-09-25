@@ -11,12 +11,17 @@
     margin: 40px 0 110px;
 }
 
-.profile__field{
+.profile__field {
     align-items: baseline;
     font-size: 11px;
     font-weight: 400;
     max-width: 410px;
     display: flex;
+    border-top: 1px solid #E8E8E8;
+}
+
+.profile__field:first-of-type {
+  border: none;
 }
 
 .profile__info {

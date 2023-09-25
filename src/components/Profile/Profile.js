@@ -21,26 +21,24 @@ function Profile() {
             />
             Виталий
           </label>
-          <hr className="profile__line"></hr>
           <label className="profile__field">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            value=""
-            placeholder="Email"
-            className="profile__info"
-            minLength="2"
-            maxLength="40"
-            required
-          />
-          mail@yandex.ru
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Email"
+              className="profile__info"
+              minLength="2"
+              maxLength="40"
+              required
+            />
+            mail@yandex.ru
           </label>
-            
         <button className="profile__save" type="submit">
           Редактировать
         </button>
-          <Link to="/signin" className="profile__signin-link">
+          <Link to="/" className="profile__signin-link">
             Выйти из аккаунта
           </Link>
         </form>
