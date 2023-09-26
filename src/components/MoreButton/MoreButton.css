@@ -1,0 +1,27 @@
+.more {
+  background: #fafafa;
+}
+
+.more__btn-more {
+  margin-bottom: 105px;
+  width: 320px;
+  height: 36px;
+  border-radius: 6px;
+  background: #F4F4F4;;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+.more__btn-more:hover {
+  opacity: 0.6;
+}
+
+
+@media screen and (max-width: 400px) {
+  .more__btn-more {
+      width: 240px;
+      margin-bottom: 65px;
+  }
+}
