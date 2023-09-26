@@ -13,6 +13,6 @@
 ---
 
 # movies-explorer-frontend
-## Название макета
-
-light-3
+* Название макета - light-3 
+* Ссылка на pull request - https://github.com/Artem-Bulychev/movies-explorer-frontend/pull/3
+* Ссылка на сайт - https://movies.dip.nomoredomainsrocks.ru
