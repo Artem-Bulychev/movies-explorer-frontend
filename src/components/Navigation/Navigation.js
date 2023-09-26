@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navigation.css";
 import Profile from '../../images/profile.svg';
 
 export default function Navigation() {
+  const location = useLocation();
+
   return (
     <nav className="navigation">
       <div className="navigation-box">
@@ -14,7 +16,7 @@ export default function Navigation() {
           Сохранённые фильмы
         </Link>
       </div>
-      <Link to="/profile" className="navigation__profile">
+      <Link to="/profile" className={`navigation__profile ${location.pathname === '/' ? 'navigation__profile_color-dark' : ''}`}>
         <img src={Profile} alt="Профиль" className="navigation__profile-icon" />
         Аккаунт
       </Link>

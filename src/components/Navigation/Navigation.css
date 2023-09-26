@@ -47,6 +47,9 @@
   opacity: .6;
   transition: ease-out 0.2s;
 }
+.navigation__profile_color-dark {
+  background: #DDDEE3;
+}
 .navigation__profile-icon {
   width: 12px;
   height: 14px;

@@ -5,12 +5,14 @@
     flex-direction: column;
     cursor: pointer;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05);
+    aspect-ratio: 1/0.80;
 }
 
 .movies-card__photo{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
+    aspect-ratio: 1/0.55;
 }
 .movies-card__container{
     justify-content: space-between;
@@ -45,14 +47,15 @@
     background: #2BE080;
 }
 .movies-card__btn-save-close{
+    background: initial;
     background-image: url("../../images/dislike.svg");
     height: 16px;
     cursor: pointer;
     padding: 0;
     background-position: center;
-    background-color: #ffffff;
     border: none;
     width: 16px;
+    box-shadow: none;
 }
 .movies-card__btn-save-close:hover{
     opacity: .7;

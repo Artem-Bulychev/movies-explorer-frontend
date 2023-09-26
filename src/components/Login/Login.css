@@ -15,14 +15,13 @@
 }
 
 .login__form_name {
-  margin: 40px 0;
+  margin: 38px 0;
   font-size: 24px;
   font-weight: 500;
 }
 
 .login__form_field {
   width: 100%;
-  padding-top: 24px;
   gap: 5px;
   display: flex;
   font-weight: 400;
@@ -35,6 +34,22 @@
 
 .login__form_field:first-of-type {
   padding: 0;
+}
+
+.login-form__error {
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  min-height: 20px;
+  line-height: 1;
+  margin: 0;
+  color: #ee3465;
+  text-align: left;
+  opacity: 0;
+}
+
+.login-form__error_active {
+  opacity: 1;
 }
 
 .login__form_info {
@@ -58,9 +73,27 @@
   border-color: #a8a8a8;
 }
 
+.login-form__submit-error {
+  margin-top: 160px;
+  color: #FF004C;
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0;
+  align-self: center;
+  min-height: 14px;
+}
+
+.login-form__submit-error {
+  opacity: 1;
+}
+
 .login__button {
-  margin-top: 219px;
-  width: 396px;
+  margin-top: 20px;
+  width: 100%;
   height: 45px;
   background: #3456f3;
   border-radius: 3px;
@@ -75,8 +108,9 @@
   opacity: 0.8;
 }
 .login__button:disabled {
-  cursor: default;
-  opacity: 0.2;
+  pointer-events: none;
+  background-color: #f3f3f3;
+  color: #c2c2c2;
 }
 .login__support {
   display: flex;

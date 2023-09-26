@@ -6,7 +6,7 @@ import "./Header.css";
 import { routesGreyHeader, SCREEN_MD } from "../../utils/constants";
 import Navigation from "../Navigation/Navigation";
 
-export default function Header() {
+export default function Header({ isLoggedIn }) {
   const { pathname } = useLocation();
   const headRoutes = routesGreyHeader.find((item) => {
     return item === pathname;
@@ -41,35 +41,22 @@ export default function Header() {
       <Link to="/" className="header__logo">
         <img className="header__logo-img" src={logo} alt="Логотип" />
       </Link>
-      <Routes>
-        <Route
-          path="/movies"
-          element={resize ? <BurgerMenu /> : <Navigation />}
-        />
-        <Route
-          path="/saved-movies"
-          element={resize ? <BurgerMenu /> : <Navigation />}
-        />
-        <Route
-          path="/profile"
-          element={resize ? <BurgerMenu /> : <Navigation />}
-        />
-        <Route
-          path="/"
-          element={
-            <div className="header__container">
-              <nav className="header__container-box">
-                <Link to="/signup" className="header__container-link">
-                  Регистрация
-                </Link>
-                <Link to="/signin" className="header__container-link">
-                  Войти
-                </Link>
-              </nav>
-            </div>
-          }
-        />
-      </Routes>
+      {
+        !isLoggedIn ? (
+          <div className="header__container">
+            <nav className="header__container-box">
+              <Link to="/signup" className="header__container-link">
+                Регистрация
+              </Link>
+              <Link to="/signin" className="header__container-link">
+                Войти
+              </Link>
+            </nav>
+          </div>
+        ) : (
+          resize ? <BurgerMenu /> : <Navigation />
+        )
+      }
     </header>
   );
 }
