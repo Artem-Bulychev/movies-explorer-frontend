@@ -18,12 +18,16 @@
 }
 
 .error__button{
+    display: flex;
+    align-self: center;
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
     color:  #3456F3;
     font-size: 14px;
     text-decoration: none;
+    background: initial;
+    border: none;
 }
 
 .error__button:hover{

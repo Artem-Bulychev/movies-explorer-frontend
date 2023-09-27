@@ -14,16 +14,13 @@ export default function BurgerMenu() {
 
   return (
     <nav className="burger">
-      <button className="burger-button" type="button"
-      onClick={handleEditBurgerClick}
-      >
+      <button className="burger-button" type="button" onClick={handleEditBurgerClick} >
         <span className="burger-button__line" />
       </button>
       {/* <div className="burger__movies burger__movies-inactive"> */}
-      <div className={`burger__movies ${isBurgerOpen ? "": "burger__movies-inactive"}`}>
+      <div className={`burger__movies ${isBurgerOpen ? "": "burger__movies-inactive"}`} onClick={handleCloseBurgerClick}>
         <div className="burger__blur" />
-        <button className="burger__close" type="button"
-        onClick={handleCloseBurgerClick}/>
+        <button className="burger__close" type="button" onClick={handleCloseBurgerClick}/>
         <div className="burger__navigation">
           <nav className="burger__navigation-links">
             <Link to="/" className="burger__navigation-link">

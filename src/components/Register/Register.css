@@ -16,7 +16,7 @@
 }
 
 .register-form__title {
-  margin: 40px 0;
+  margin: 38px 0;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -24,7 +24,6 @@
 
 .register-form__field {
   width: 100%;
-  padding-top: 24px;
   gap: 5px;
   display: flex;
   font-weight: 400;
@@ -62,11 +61,34 @@
   padding-top: 6px;
   font-size: 10px;
   font-weight: 400;
-  line-height: normal;
-  min-height: 12px;
+  min-height: 20px;
+  line-height: 1;
   margin: 0;
   color: #ee3465;
-  align-self: start;
+  text-align: left;
+  opacity: 0;
+}
+
+.register-form__error_active {
+  opacity: 1;
+}
+
+.register-form__submit-error {
+  margin-top: 90px;
+  color: #FF004C;
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0;
+  align-self: center;
+  min-height: 14px;
+}
+
+.register-form__submit-error {
+  opacity: 1;
 }
 
 .register-form__save {
@@ -76,8 +98,8 @@
   border-radius: 3px;
   border: 0;
   color: #fff;
-  margin-top: 134px;
-  width: 396px;
+  margin-top: 20px;
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
 }
@@ -88,9 +110,8 @@
 }
 
 .register-form__save:disabled {
-  cursor: default;
-  opacity: 0.1;
-  background-color: #f8f8f8;
+  pointer-events: none;
+  background-color: #f3f3f3;
   color: #c2c2c2;
 }
 
