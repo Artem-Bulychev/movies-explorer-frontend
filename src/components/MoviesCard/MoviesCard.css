@@ -8,6 +8,14 @@
     aspect-ratio: 1/0.80;
 }
 
+.movies-card__link {
+  text-decoration: none;
+}
+
+.movies-card__link:hover {
+  opacity: 0.7;
+}
+
 .movies-card__photo{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

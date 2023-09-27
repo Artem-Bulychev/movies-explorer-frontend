@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Profile.css";
 import { useFormWithValidation } from "../../hooks/useFormWithValidation";
@@ -8,17 +8,20 @@ import { NAME_REGEX, EMAIL_REGEX } from "../../utils/constants";
 function Profile({ updateProfile, logout, isErrorSubmit, setIsErrorSubmit }) {
   const { values, setValues, handleChange, errors, isValid, resetForm } = useFormWithValidation();
   const currentUser = useContext(CurrentUserContext);
+  const [isSuccessSubmit, setIsSuccessSubmit] = useState('');
 
   const initialValues = values.name !== currentUser.name || values.email !== currentUser.email;
 
   function handleSubmit(evt) {
     evt.preventDefault();
     updateProfile(values);
+    setIsSuccessSubmit('Данные успешно обновлены.');
   };
 
   function handleChangeInput(evt) {
     handleChange(evt);
     setIsErrorSubmit('');
+    setIsSuccessSubmit('');
   }
 
   useEffect(() => {
@@ -67,7 +70,7 @@ function Profile({ updateProfile, logout, isErrorSubmit, setIsErrorSubmit }) {
             />
           </label>
           <span className={`profile-form__error ${errors ? 'profile-form__error_active' : ''}`}>{errors.email}</span>
-          <span className={`profile-form__submit-error ${isErrorSubmit ? 'profile-form__submit-error_active' : ''}`}>{isErrorSubmit}</span>
+          <span className={`profile-form__submit-error ${isErrorSubmit || isSuccessSubmit ? 'profile-form__submit-error_active' : ''}`}>{isErrorSubmit || isSuccessSubmit}</span>
           <button className="profile__save" type="submit" disabled={!isValid || !initialValues}>
             Редактировать
           </button>

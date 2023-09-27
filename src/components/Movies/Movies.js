@@ -121,7 +121,7 @@ const Movies = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [setVisibleMoviesCount]);
+  }, [searchQuery, setVisibleMoviesCount]);
 
   return (
     <section className='movies'>

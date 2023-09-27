@@ -115,6 +115,8 @@ function App() {
       .checkToken(token)
       .then((res) => {
         if (!res) {
+          setIsLoggedIn(false);
+          navigate('/', {replace: true});
           return;
         }
         setIsLoggedIn(true);

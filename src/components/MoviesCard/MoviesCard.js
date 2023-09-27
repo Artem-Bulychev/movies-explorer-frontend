@@ -76,7 +76,7 @@ export default function MoviesCard({ movie, savesMovies, setSavesMovies, onDelet
 
   return (
     <li className='movies-card'>
-      <img className='movies-card__photo' src={imageUrl} alt={movie.nameRU} />
+      <a href={movie.trailerLink} rel='noreferrer' className='movies-card__link' target='_blank'><img className='movies-card__photo' src={imageUrl} alt={movie.nameRU} /></a>
       <div className='movies-card__container'>
         <h2 className='movies-card__name'>{movie.nameRU}</h2>
         <button
